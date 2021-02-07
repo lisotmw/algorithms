@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 public class Util {
 	public static void printArr2(int[][] dp) {
 		for(int[] arr : dp) {
-			Arrays.stream(arr).boxed().collect(Collectors.toList()).forEach(System.out::print);
-			System.out.println();
+			List<Integer> collect = Arrays.stream(arr).boxed().collect(Collectors.toList());
+			System.out.println(collect);
 		}
 	}
 	public static void printArr2(boolean[][] dp) {
